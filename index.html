@@ -124,7 +124,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We propose a novel framework for simulating ink as a particle-laden flow using particle flow maps. Our method addresses the limitations of existing flow-map techniques, which struggle with dissipative forces like viscosity and drag, thereby extending the application scope from solving the Euler equations to solving the Navier-Stokes equations with accurate viscosity and laden-particle treatment. Our key contribution lies in a coupling mechanism for two particle systems, coupling physical \revise{sediment} particles and virtual flow-map particles on a background grid by solving a Poisson system. We implemented a novel path integral formula to incorporate viscosity and drag forces into the particle flow map process. Our approach enables state-of-the-art simulation of various particle-laden flow phenomena, exemplified by the bulging and breakup of suspension drop tails, torus formation, torus disintegration, and the coalescence of sedimenting drops. In particular, our method delivered high-fidelity ink diffusion simulations by accurately capturing vortex bulbs, viscous tails, fractal branching, and hierarchical structures.
+            We propose a novel framework for simulating ink as a particle-laden flow using particle flow maps. Our method addresses the limitations of existing flow-map techniques, which struggle with dissipative forces like viscosity and drag, thereby extending the application scope from solving the Euler equations to solving the Navier-Stokes equations with accurate viscosity and laden-particle treatment. Our key contribution lies in a coupling mechanism for two particle systems, coupling physical sediment particles and virtual flow-map particles on a background grid by solving a Poisson system. We implemented a novel path integral formula to incorporate viscosity and drag forces into the particle flow map process. Our approach enables state-of-the-art simulation of various particle-laden flow phenomena, exemplified by the bulging and breakup of suspension drop tails, torus formation, torus disintegration, and the coalescence of sedimenting drops. In particular, our method delivered high-fidelity ink diffusion simulations by accurately capturing vortex bulbs, viscous tails, fractal branching, and hierarchical structures.
           </p>
         </div>
       </div>
@@ -133,6 +133,44 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">Examples</h2>
+    <div id="results-carousel" class="carousel results-carousel">
+      <div class="item item-video1">
+        <video poster="" id="video1" autoplay controls muted loop height="100%">
+          <source src="static/videos/one_sphere.mp4"
+          type="video/mp4">
+        </video>
+        <h4 class="title is-3">One SPhere</h4>
+      </div>
+      <div class="item item-video2">
+        <video poster="" id="video2" autoplay controls muted loop height="100%">
+          <source src="static/videos/porus.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-video3">
+        <video poster="" id="video3" autoplay controls muted loop height="100%">
+          <source src="static/videos/inject.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-video4">
+        <video poster="" id="video4" autoplay controls muted loop height="100%">
+          <source src="static/videos/cat.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-video5">
+        <video poster="" id="video5" autoplay controls muted loop height="100%">
+          <source src="static/videos/armadillo.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel 
 <section class="hero is-small">
@@ -188,45 +226,7 @@
 
 
 <!-- Video carousel -->
-<section class="section">
-  
-    <div class="container is-max-desktop content">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/one_sphere.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/porus.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">
-            <source src="static/videos/inject.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="100%">
-            <source src="static/videos/cat.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video5">
-          <video poster="" id="video5" autoplay controls muted loop height="100%">
-            <source src="static/videos/armadillo.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
 
-</section>
 <!-- End video carousel -->
 
 <!-- Paper poster -->
@@ -240,18 +240,22 @@
 <!--End paper poster -->
 
 
-<!--BibTex citation 
+BibTex citation 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{li2024article,
-        year = {2024},
+      <pre><code>@inproceedings{li2024particle,
         title = {Particle-Laden Fluid on Flow Maps},
-        booktitle = {ACM SIGGRAPH 2024 (Conference Track)},
-        author = {Li, Zhiqi and Börcsök, Barnabás and Chen, Duowen and Sun, Yutong and Zhu, Bo and Turk, Greg}
+        author = {Li, Zhiqi and Chen, Duowen and Lin, Candong and Liu, Jinyuan and Zhu, Bo}
+        journal={ACM Transactions on Graphics (TOG)},
+        volume={43},
+        number={6},
+        pages={1--20},
+        year={2024},
+        publisher={ACM New York, NY, USA}
       }</code></pre>
     </div>
-</section>-->
+</section>
 <!--End BibTex citation -->
 
 
